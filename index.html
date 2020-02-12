@@ -1,93 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Elastic Beanstalk</title>
-    <style>
-      body {
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        font-size:14px;
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: none;
-      }
-      body.blurry {
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: #fff 0px 0px 25px;
-      }
-      a {
-        color: #55aaff;
-      }
-      .textColumn, .linksColumn {
-        padding: 2em;
-      }
-      .textColumn {
-        position: absolute;
-        top: 0px;
-        right: 50%;
-        bottom: 0px;
-        left: 0px;
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: <img src="C:\Users\A237809\Desktop\web\img\naturec.jpg" alt="Nature" style="width:100%">
+.bgimg2 {background-image: <img src="C:\Users\A237809\Desktop\web\img\naturec.jpg" alt="Nature" style="width:100%">
+</style>
+<body>
+ 
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-center w3- w3-blue w3-center">
+    <h1 class="w3-jumbo">Cloud-beginners  </h1>
+    <h2>Lets get started with your cloud journey</h2>
+    We have approached you because we care for your future 
+	<img src="C:\Users\A237809\Desktop\web\img\naturec.jpg" "w3-center" alt="Nature" style="width:40%">
+ 
+ 
+ 
+ 
+ 
+ <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">ARTICLES</button>
+ 
+ <div id="id02" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">ARE YOU INTERESTED IN STARTED THE LEARNING PATH?</h1>
+      <p>We will be sending studying content soon .</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="email address" name="email address">
+		
+      </form>
+      <p><i>Sincerely, SBSA (Cloud division)</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id02').style.display=''" type="button" class="w3-button w3-block w3-green">submit </button>
+        </div>
+    
+  <img src="C:\Users\A237809\Desktop\web\img\naturec.jpg" alt="Nature" style="width:100%">
+  
+</header>
 
-        text-align: right;
-        padding-top: 11em;
-        background-color: blue;
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-yellow w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Cloud introduction and testimony </a>
+ <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Survey response </a>
+  </div>
+</div>
 
-      }
-      .textColumn p {
-        width: 75%;
-        float:right;
-      }
-      .linksColumn {
-        position: absolute;
-        top:0px;
-        right: 0px;
-        bottom: 0px;
-        left: 50%;
-
-        background-color: #33342D;
-      }
-
-      h1 {
-        color: #33342D;
-        font-size: 500%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      h2 {
-        font-size: 200%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      ul {
-        padding-left: 1em;
-        margin: 0px;
-      }
-      li {
-        margin: 1em 0em;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="textColumn">
-      <h1>Congratulations</h1>
-      <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS Cloud</p>
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min" id="us">
+ 
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>WHAT IS CLOUD</b></h1>
+   
+    <p><i>Cloud computing relies on sharing of resources to achieve coherence and economies of scale.
+        Advocates of public and hybrid clouds note that cloud computing allows companies to avoid or minimize up-front IT infrastructure costs.
+		Proponents also claim that cloud computing allows enterprises to get their applications up and running faster, with improved manageability and less maintenance, 
+         and that it enables IT teams to more rapidly adjust resources to meet fluctuating and unpredictable demand.</i>
+		  
+		<p> <br><i>Cloud Computing is the use of hardware and software to deliver a service over a network (typically the Internet). 
+		 With cloud computing, users can access files and use applications from any device that can access the Internet. 
+		 An example of a Cloud Computing provider is Google's Gmail.<i></br></p>
+		 
+		 <p>
+   How Does Cloud Computing Work? Cloud computing is an application-based software infrastructure that stores data on remote serves
+   which can be accessed through the internet.The front end enables a user to access data stored in the cloud using an internet browser</p>
+   
+   <p> below is an insightful story about a graduate who never knew cloud </p>
+  
+ <div class="w3-card w3-margin w3-margin-top">
+  <img src="C:\Users\A237809\Desktop\web\img\web1.png" style="width:60%">
+    <div class="w3-container w3-white">
+      <h4><b>Nombulelo Pakade, Solutions Architecture IN SBSA Group</b></h4>
+      <p>Just me, myself and I, exploring the world of tecnhology and was provisioned a oppurtunity to learn about AWS. I have a heart of love and a interest of finding a client that would love to migrate into the cloud . I want to share my world with you and will update the blog and give competitions to groom young cloud gurus. This will help your carrer immensely .</p>
+      <div class="w3-half">
+      <div class="w3-row"></p>
+        <p></p>
+      </div>
     </div>
-    <div class="linksColumn">
-      <h2>What's Next?</h2>
-      <ul>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">AWS Elastic Beanstalk overview</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html">AWS Elastic Beanstalk concepts</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html">Deploy an Express Application to AWS Elastic Beanstalk</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express_elasticache.html">Deploy an Express Application with Amazon ElastiCache to AWS Elastic Beanstalk</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_geddy_elasticache.html">Deploy a Geddy Application with Amazon ElastiCache to AWS Elastic Beanstalk </a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_custom_container.html">Customizing and Configuring a Node.js Container </a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.loggingS3.title.html">Working with Logs</a></li>
-      </ul>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-white w3-center w3-wide" id="rsvp">
+  <h1>DEADLINE FOR 100 STUDENTS IS SOON </h1>
+  <p class="w3-large">Kindly Respond By APRIL 2020</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RESPONSE</button>
+	
+	
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+	<h1 class="w3-wide">ARE YOU INTERESTED IN STARTED THE LEARNING PATH?</h1>
+      <p>We really hope that you see a future in aws .</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+		<input class="w3-input w3-border" type="text" placeholder="Student number (s)" name="name">
+		<input class="w3-input w3-border" type="text" placeholder="University name(s)" name="name">
+		<input class="w3-input w3-border" type="text" placeholder="Year of studying(s)" name="name">
+      </form>
+      <p><i>Sincerely, SBSA (Cloud division)</i></p>
+	  <button onclick="openWin()">Open "myWindow"</button>
+<button onclick="closeWin()">Close "myWindow"</button>
+
+
+          <button onclick="document.getElementById('id01').style.display=''" type="button" class="w3-button w3-block w3-green">YES </button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" none type="button" class="w3-button w3-block w3-red">MAYBE IN THE FUTURE
+
+ </button>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</div>
+
+<div class="w3-container w3-blue">
+    <p><span class="w3-tag w3-white w3-margin-bottom">CLOUD</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">availability zones</span> <span class="w3-tag w3-white w3-small w3-margin-bottom">Load balancer</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Autoscaling</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">edge locations</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">scheduler</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">EC2</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Docker</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Microservices</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Containers</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">S3 BUCKET</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">media and entertainment</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">s3</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">highly available apps </span>
+    </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-16">
+  <p>Powered by BULI DESIGNS </a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
 </html>
