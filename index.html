@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <style>
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
@@ -18,38 +20,57 @@ p {line-height: 2}
 .bgimg2 {background-image: <img src="C:\Users\A237809\Desktop\web\img\naturec.jpg" alt="Nature" style="width:100%">
 </style>
 <body>
- 
+
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-center w3- w3-blue w3-center">
     <h1 class="w3-jumbo">Cloud-beginners  </h1>
     <h2>Lets get started with your cloud journey</h2>
-    We have approached you because we care for your future 
-	<img src="aws-nodejs-sample-codebuild/images/MAIN (002).jpghttps://github.com/DarrenW-aws/aws-nodejs-sample-codebuild/blob/master/images/webbs.jpg" "w3-center" alt="Nature" style="width:40%">
- 
- 
- 
- 
- 
- <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">ARTICLES</button>
- 
+    We have approached you because we care for your future
+	<img src="C:\Users\A237809\Desktop\web\img\naturec.jpg" "w3-center" alt="Nature" style="width:40%">
+
+
+
+
+
+ <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">ARTICLES AND VIDEOS</button>
+
  <div id="id02" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
     <div class="w3-container w3-white w3-center">
       <h1 class="w3-wide">ARE YOU INTERESTED IN STARTED THE LEARNING PATH?</h1>
       <p>We will be sending studying content soon .</p>
-      <form>
-        <input class="w3-input w3-border" type="text" placeholder="email address" name="email address">
-		
-      </form>
+
+
+
+
       <p><i>Sincerely, SBSA (Cloud division)</i></p>
       <div class="w3-row">
         <div class="w3-half">
-          <button onclick="document.getElementById('id02').style.display=''" type="button" class="w3-button w3-block w3-green">submit </button>
+        <form id = "me" class="form-horizontal" name = "forms" >
+          <input class="w3-input w3-border" type="text" placeholder="email address" name="email address" class="form-control req" required/>
+          <button onclick="myFunction()"  type="button" class="w3-button w3-block w3-green">submit </button>
+<br />
+
+           <button onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Exit</button>
+
+        </form>
+
+
         </div>
-    
+        <script>
+        var form = document.getElementById('me');
+
+          function myFunction() {
+            if (form.checkValidity()) {
+              alert("Email sent succesfully");
+            }
+            document.forms["forms"].reset();
+          }
+          </script>
+
   <img src="C:\Users\A237809\Desktop\web\img\naturec.jpg" alt="Nature" style="width:100%">
-  
+
 </header>
 
 <!-- Navbar (sticky bottom) -->
@@ -63,25 +84,25 @@ p {line-height: 2}
 
 <!-- About / Jane And John -->
 <div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min" id="us">
- 
+
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>WHAT IS CLOUD</b></h1>
-   
+
     <p><i>Cloud computing relies on sharing of resources to achieve coherence and economies of scale.
         Advocates of public and hybrid clouds note that cloud computing allows companies to avoid or minimize up-front IT infrastructure costs.
-		Proponents also claim that cloud computing allows enterprises to get their applications up and running faster, with improved manageability and less maintenance, 
+		Proponents also claim that cloud computing allows enterprises to get their applications up and running faster, with improved manageability and less maintenance,
          and that it enables IT teams to more rapidly adjust resources to meet fluctuating and unpredictable demand.</i>
-		  
-		<p> <br><i>Cloud Computing is the use of hardware and software to deliver a service over a network (typically the Internet). 
-		 With cloud computing, users can access files and use applications from any device that can access the Internet. 
+
+		<p> <br><i>Cloud Computing is the use of hardware and software to deliver a service over a network (typically the Internet).
+		 With cloud computing, users can access files and use applications from any device that can access the Internet.
 		 An example of a Cloud Computing provider is Google's Gmail.<i></br></p>
-		 
+
 		 <p>
    How Does Cloud Computing Work? Cloud computing is an application-based software infrastructure that stores data on remote serves
    which can be accessed through the internet.The front end enables a user to access data stored in the cloud using an internet browser</p>
-   
+
    <p> below is an insightful story about a graduate who never knew cloud </p>
-  
+
  <div class="w3-card w3-margin w3-margin-top">
   <img src="C:\Users\A237809\Desktop\web\img\web1.png" style="width:60%">
     <div class="w3-container w3-white">
@@ -101,8 +122,8 @@ p {line-height: 2}
   <p class="w3-large">Kindly Respond By APRIL 2020</p>
   <p class="w3-xlarge">
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RESPONSE</button>
-	
-	
+
+
   </p>
 </div>
 
@@ -112,23 +133,31 @@ p {line-height: 2}
     <div class="w3-container w3-white w3-center">
 	<h1 class="w3-wide">ARE YOU INTERESTED IN STARTED THE LEARNING PATH?</h1>
       <p>We really hope that you see a future in aws .</p>
-      <form>
-        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+    <form id = "ok" name = "clear">
+    <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
 		<input class="w3-input w3-border" type="text" placeholder="Student number (s)" name="name">
 		<input class="w3-input w3-border" type="text" placeholder="University name(s)" name="name">
 		<input class="w3-input w3-border" type="text" placeholder="Year of studying(s)" name="name">
-      </form>
+    <button onclick="myFunc()" type="button" class="w3-button w3-block w3-green">YES </button>
+    <button onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Exit</button>
+    </form>
+
+      <script>
+        var ola = document.getElementById('ok');
+
+          function myFunc() {
+            if (ola.checkValidity()) {
+              alert("You have succesfully registerd, We will get back to you as soon as possible");
+            }
+            document.forms["clear"].reset();
+          }
+      </script>
+
       <p><i>Sincerely, SBSA (Cloud division)</i></p>
-	  <button onclick="openWin()">Open "myWindow"</button>
-<button onclick="closeWin()">Close "myWindow"</button>
 
-
-          <button onclick="document.getElementById('id01').style.display=''" type="button" class="w3-button w3-block w3-green">YES </button>
         </div>
         <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" none type="button" class="w3-button w3-block w3-red">MAYBE IN THE FUTURE
 
- </button>
         </div>
       </div>
     </div>
